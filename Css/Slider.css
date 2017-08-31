@@ -1,0 +1,45 @@
+.slider {
+    
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+ 
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+  
+   
+}
+
+.slider:nth-child(2) ul {
+    animation-timing-function: ease-in;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-right: 0;}
+    20%{margin-left: 0;}
+    
+    25% {margin-right: -100%;}
+    45%{margin-left: -100%;}
+    
+    50% {margin-right: -200%;}
+    70%{margin-left: -200%;}
+    
+    75% {margin-right: -200%;}
+    100%{margin-left: -200%;}
+}
+
+
